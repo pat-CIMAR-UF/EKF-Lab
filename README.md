@@ -1,15 +1,20 @@
 # Kalman-Filter-Lab
 KF - linear
+
 EKF - nonlinear
+
 UKF - highly nonlinear
 
 μ: Mean of the prior belief 
+
 σ^2: Variance of the prior belief 
 
 v: Mean of the measurement 
+
 r^2: Variance of the measurement
 
 τ: Mean of the posterior
+
 s^2: Variance of the posterior
 
 The new mean is a weighted sum of the prior belief and measurement means. With uncertainty, a larger number represents a more uncertain probability distribution.
