@@ -29,4 +29,9 @@ The two Gaussians provide us with more information together than either Gaussian
 Posterior Mean: μ' = μ1 + μ2
 Posterior Variance: σ^2' = (σ1)^2 + (σ2)^2
 
+## Multivariate Gaussians
+Mean and covariance
+
+## EKF
+This [link](https://classroom.udacity.com/nanodegrees/nd209/parts/a431d446-05df-4641-9e3d-79e1d55a7a2f/modules/b66739be-878e-4cea-8569-881b7eb2d34c/lessons/f002d591-94af-4c70-aeac-ac2ed6f7b527/concepts/2e25ed5b-4001-41e8-8cbc-478662356527) to see the math
 
