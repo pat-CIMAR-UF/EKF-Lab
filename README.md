@@ -43,3 +43,8 @@ Check out this about Kalman Gain:
 </p>
 
 
+# EKF
+Use Taylor Series(first 2) to linearize the non-linear function.
+<p align="center">
+    <img src="img/EKF.png" width="720px" alt=""/>
+</p>
