@@ -35,3 +35,5 @@ Mean and covariance
 ## EKF
 This [link](https://classroom.udacity.com/nanodegrees/nd209/parts/a431d446-05df-4641-9e3d-79e1d55a7a2f/modules/b66739be-878e-4cea-8569-881b7eb2d34c/lessons/f002d591-94af-4c70-aeac-ac2ed6f7b527/concepts/2e25ed5b-4001-41e8-8cbc-478662356527) to see the math
 
+Check out this about Kalman Gain:
+[![YouTube Video 1]](https://www.youtube.com/watch?v=K-FobmdRMtI&t=197s)
