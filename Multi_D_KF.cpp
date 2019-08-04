@@ -12,27 +12,38 @@ float measurements[3] = { 1, 2, 3 };
 tuple<MatrixXf, MatrixXf> kalman_filter(MatrixXf x, MatrixXf P, MatrixXf u, MatrixXf F, MatrixXf H, MatrixXf R, MatrixXf I)
 {
     for (int n = 0; n < sizeof(measurements) / sizeof(measurements[0]); n++) {
-
+        //****** TODO: Kalman-filter function********//
+        
         // Measurement Update
-        MatrixXf Z(1, 1);
+        // Code the Measurement Update
+        // Initialize and Compute Z, y, S, K, x, and P
+        
+        //Measurement Update:
+        MatrixXf Z(1,1);
         Z << measurements[n];
-
-        MatrixXf y(1, 1);
-        y << Z - (H * x);
-
-        MatrixXf S(1, 1);
+        
+        MatrixXf y(1,1);
+        y << Z - H * x;
+        
+        MatrixXf S(1,1);
         S << H * P * H.transpose() + R;
-
-        MatrixXf K(2, 1);
+        
+        //Calculation of Kalman Gain:
+        MatrixXf K(2,1);
         K << P * H.transpose() * S.inverse();
-
-        x << x + (K * y);
-
-        P << (I - (K * H)) * P;
-
+        
+        //Calculation of Posterior State and Covariance:
+        x << x + K * y;
+        
+        P << (I - K * H) * P;
+        
         // Prediction
-        x << (F * x) + u;
-        P << F * P * F.transpose();
+        // Code the Prediction
+        // Compute x and P
+        x << F * x + u;
+        P << F  * P * F.transpose();
+        
+        
     }
 
     return make_tuple(x, P);
